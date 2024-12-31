@@ -1,0 +1,93 @@
+.header{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;    
+}
+
+
+.articleContainer{
+    padding:60px 10%;
+    gap: 40px;
+    align-items: flex-start;
+    display: flex;
+}
+
+.leftContainer{
+    padding:30px 50px;
+    flex: 2;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+
+.dateIcon{
+    height: 20px;
+    width: 20px;
+}
+
+.changeIcon{/*轉換顏色*/
+    filter: invert(100%) brightness(200%);
+}
+
+
+.themeImg{
+    height: 10%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.gitInstruction{
+    font-size: 20px;
+    color: rgb(235, 96, 96);
+}
+
+.link{
+    list-style-type: disc;
+    margin-left: 20px;
+    display: list-item;
+    font-size: 1.25rem;
+}
+
+.changeText{
+    font-size: 1.25rem;
+}
+
+.switchButton{
+    display: none;
+}
+
+@media(max-width:1024px){
+
+    .articleContainer{
+        padding:25px ;
+    }
+
+    .rightContainer{
+        display: none;
+    }
+
+    .leftContainer{
+        width: 100%;
+        padding:30px 25px;
+    }
+
+    .changeText{
+        font-size: 1rem;
+    }
+
+    .link{
+        list-style-type: disc;
+        margin-left: 20px;
+        display: list-item;
+        font-size: 1rem;
+    }
+
+    .gitInstruction{
+        font-size: 15px;
+        color: rgb(235, 96, 96);
+    }
+
+    .switchButton{
+        display:flex;
+    }
+}

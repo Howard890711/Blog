@@ -1,0 +1,37 @@
+.header{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;    
+}
+
+.homeContainer{
+    padding:60px 10%;
+    gap: 40px;
+    align-items: flex-start;
+    display: flex;
+}
+
+.leftContainer{
+    flex: 2;
+}
+
+.switchButton{
+    display: none;
+}
+
+@media(max-width:1024px){
+
+    .homeContainer{
+        padding:25px;
+    }
+
+    .rightContainer{
+        display: none;
+    }
+
+    .switchButton{
+        display: flex;
+    }
+
+}
+

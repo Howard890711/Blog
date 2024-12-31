@@ -1,0 +1,8 @@
+.footerContainer{
+    /* background-image: url('../assets/footerImg.jpg') ; */
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    margin: 0;
+    padding: 2em 1em 1em;
+}

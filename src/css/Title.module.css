@@ -1,0 +1,60 @@
+.titleContainer{
+    position: sticky;
+    top:0;
+    z-index:1000;
+    padding: 20px 10%;
+    background-color: white;
+    box-shadow: 0px 5px 5px -5px gray;
+}
+
+.titleFirst{
+    color: rgb(236, 215, 130);
+    font-family: "Comic Sans MS",cursive;
+}
+
+
+.titleSecond{
+    color: darkgoldenrod;
+}
+
+
+.titleLink{
+    cursor: pointer;
+}
+
+.changeModel{
+    display: flex;
+    border-radius: 25px;
+    align-items: center;
+    padding:5px;
+    background-color:antiquewhite;
+    cursor:pointer;
+}
+
+.modelIconBlock{
+    height: 40px;
+    width: 40px;
+    padding:10px;
+}
+
+.modelIcon{/*轉換顏色*/
+    filter: invert(100%) brightness(200%);
+}
+
+
+
+
+
+@media(max-width:1024px){
+    .titleContainer{
+        padding:20px 25px;
+    }
+}
+
+@media(max-width:768px){
+   .modelIconBlock{
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+   }
+} 
