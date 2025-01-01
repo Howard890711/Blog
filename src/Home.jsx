@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 import Article from "./Article"
 import ChangeButton from "./ChangeButton"
 import Footer from "./Footer"
