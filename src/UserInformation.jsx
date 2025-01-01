@@ -15,7 +15,7 @@ export default function UserInformation() {
         toCategories('/Categories');
     }
 
-    let {archives,categories,modelBlock,modelText,modelAnnotation}=useContext(ArchiveContext)
+    let {archives,categories,modelBlock,modelAnnotation}=useContext(ArchiveContext)
 
   return (
     <>

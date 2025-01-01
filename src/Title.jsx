@@ -1,6 +1,6 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import  style from './css/Title.module.css'
-import { useContext, useEffect, useState } from 'react';
+import { useContext} from 'react';
 import { ArchiveContext } from './Archive';
 
 function Title() {
