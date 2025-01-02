@@ -56,6 +56,10 @@
     display: none;
 }
 
+.layout{
+    padding: 15px;
+}
+
 @media(max-width:1024px){
 
     .articleContainer{
@@ -90,4 +94,12 @@
     .switchButton{
         display:flex;
     }
+}
+
+@media(max-width:768px){
+    .layout{
+        padding: 0px;
+        padding-top:10px ;
+    }
+    
 }

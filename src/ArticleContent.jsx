@@ -51,7 +51,7 @@ export default function ArticleContent() {
                         className={style.themeImg}
                         alt="themeImage"
                         />
-                    <div className='p-3'>
+                    <div className={style.layout}>
                         <div className='Preface'>
                             <p className={`lh text-wrap ${style.changeText}`}>
                                  {categoryInfo.preface} 
