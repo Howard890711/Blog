@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { useContext, useEffect, useState} from 'react'
+import { useContext} from 'react'
 import { ArchiveContext } from './Archive'
 import style from './css/Article.module.css'
 import { Link} from 'react-router-dom'
@@ -24,7 +24,11 @@ export default function Article() {
                     <div 
                         className={`articleContainer1 border-0 rounded-3  ${modelBlock} ${style.category}`}  key={archive.id} >
                         <div className='overflow-hidden rounded-top'>
-                            <img className={`rounded-top ${style.articleImg}`} src={process.env.PUBLIC_URL+'/img/'+archive.img}/>
+                            <img 
+                                className={`rounded-top ${style.articleImg}`} 
+                                src={process.env.PUBLIC_URL+'/img/'+archive.img}
+                                alt='themeImage'    
+                            />
                         </div>
                         <div className="articleInformation mt-1 px-2 py-1">
                             <div className="d-flex align-items-start">

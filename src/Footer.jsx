@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import style from "./css/Footer.module.css"
-import { Link } from 'react-router-dom'
 import { ArchiveContext } from "./Archive";
 import whiteImg from './assets/footerImg.jpg';
 import blackImg from './assets/footerBlack.jpg'

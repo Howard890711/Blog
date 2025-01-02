@@ -43,10 +43,18 @@ export default function About() {
 
                     <div className='d-flex mt-3'>
                         <Link to='https://www.instagram.com/howard_07_11/'>
-                            <img className={`${style.communityImg} ${changeModel?"":style.changeIcon}`} src={process.env.PUBLIC_URL+'/img/widget/igImg.png'}/>
+                            <img 
+                                className={`${style.communityImg} ${changeModel?"":style.changeIcon}`} 
+                                src={process.env.PUBLIC_URL+'/img/widget/igImg.png'}
+                                alt='igImage'
+                            />
                         </Link>
                         <Link to='https://github.com/Howard890711'>
-                            <img className={`${style.communityImg} ${changeModel?"":style.changeIcon}`} src={process.env.PUBLIC_URL+'/img/widget/githubImg.png'}/>
+                            <img 
+                                className={`${style.communityImg} ${changeModel?"":style.changeIcon}`} 
+                                src={process.env.PUBLIC_URL+'/img/widget/githubImg.png'}
+                                alt='githubImage'
+                            />
                         </Link>
                     </div>
                 </div>

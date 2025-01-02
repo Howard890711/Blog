@@ -14,8 +14,8 @@ function App() {
 
   const [changeModel,setChangeModel]=useState(true);
   const modelBlock=changeModel?"bg-white":"text-white bg-dark";
-  const modelText=changeModel?"":"text-white";{/*className */}
-  const modelAnnotation=changeModel?"gray":"rgb(218,215,215)";{/*style */}
+  const modelText=changeModel?"":"text-white";
+  const modelAnnotation=changeModel?"gray":"rgb(218,215,215)";
 
   useEffect(()=>{
     document.body.style.backgroundColor=changeModel?"rgb(251, 246, 234)":"rgb(0,0,0,0.900)";
