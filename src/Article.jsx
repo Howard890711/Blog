@@ -27,7 +27,7 @@ export default function Article() {
                             <img 
                                 className={`rounded-top ${style.articleImg}`} 
                                 src={process.env.PUBLIC_URL+'/img/'+archive.img}
-                                alt='themeImage'    
+                                alt='themeImage'
                             />
                         </div>
                         <div className="articleInformation mt-1 px-2 py-1">

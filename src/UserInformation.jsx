@@ -15,7 +15,7 @@ export default function UserInformation() {
         toCategories('/Categories');
     }
 
-    let {archives,categories,modelBlock,modelAnnotation}=useContext(ArchiveContext)
+    let {archives,categories,modelBlock,modelText,modelAnnotation}=useContext(ArchiveContext)
 
   return (
     <>
@@ -27,7 +27,7 @@ export default function UserInformation() {
                 <div className='userBlock'>
                     <div className="col text-center">
                         <Link to="/About" className={style.userName}>
-                            <h5>Howard</h5>
+                            <h5 className={modelText}>Howard</h5>
                         </Link>
                     </div>
                     <div className="categoryAndPost row text-center mx-1">
