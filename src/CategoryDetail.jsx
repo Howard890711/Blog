@@ -33,7 +33,11 @@ export default function CategoryDetail() {
                   <ChangeButton/>
             </div>
             <div className="d-flex mb-3">
-                <img src={process.env.PUBLIC_URL+'/img/widget/folder.png'} className={`${style.folderImg} ${changeModel?"":style.changeIcon}`}/>
+                <img 
+                    src={process.env.PUBLIC_URL+'/img/widget/folder.png'} 
+                    className={`${style.folderImg} ${changeModel?"":style.changeIcon}`}
+                    alt="folderIcon"
+                />
                 <h3>Categoried</h3>
                 <h3>&nbsp;&gt;&nbsp;</h3>
                 <h3 className="text-danger">{categoryName}</h3>

@@ -16,7 +16,7 @@ export default function Footer() {
 
   return (
     <footer className={`text-center w-100 ${style.footerContainer}`} style={{backgroundImage:`url(${backgroundImg})`}}>
-      <p className=''>&#x00A9; 2024 &nbsp;<Link to='/About'>Howard</Link></p>
+      <p>Copyright&#x00A9; 2024-2025 &nbsp;Howard.</p>
       <p>All related images are &#x00A9;ICONFINDER &nbsp; &#x00A9;Pexels</p>
     </footer>
   )

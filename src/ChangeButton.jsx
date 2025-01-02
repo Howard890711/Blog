@@ -29,8 +29,9 @@ export default function ChangeButton() {
         <button 
             className={` ${style.menuBtn} ${isOpen ? "rounded-bottom":"rounded"}`} onClick={toggleMenu}
             style={{backgroundColor:background,color:changeModel?"":"white"}}
-            >
-            ☰</button>
+        >
+        ☰
+        </button>
         <div 
             className={`rounded-top align-items-center ${style.sidebar} ${isOpen ? style.open : ""}`}
             style={{backgroundColor:background}}
@@ -39,7 +40,8 @@ export default function ChangeButton() {
                 <Link key={index} to={link.to} className="rounded p-2">
                     <img
                         src={process.env.PUBLIC_URL+link.img} 
-                        className={`h-100 w-100 ${changeModel?"":style.changeIcon}`} alt={link.alt}
+                        className={`h-100 w-100 ${changeModel?"":style.changeIcon}`} 
+                        alt={link.alt}
                     /> 
                 </Link>
             ))}

@@ -28,9 +28,17 @@ export default function Article() {
                         </div>
                         <div className="articleInformation mt-1 px-2 py-1">
                             <div className="d-flex align-items-start">
-                                <img src={process.env.PUBLIC_URL+'/img/widget/dateImg.png'} className={`me-2 ${style.dateIcon} ${changeModel?"":style.changeIcon}`}/>
+                                <img 
+                                    src={process.env.PUBLIC_URL+'/img/widget/dateImg.png'} 
+                                    className={`me-2 ${style.dateIcon} ${changeModel?"":style.changeIcon}`}
+                                    alt='dateIcon'
+                                    />
                                 <p className="me-3" style={{color:`${modelAnnotation}`}} >{archive.date}</p>
-                                <img src={process.env.PUBLIC_URL+'/img/widget/data.png'} className={`me-2 ${style.dateIcon} ${changeModel?"":style.changeIcon}`}/>
+                                <img 
+                                    src={process.env.PUBLIC_URL+'/img/widget/data.png'} 
+                                    className={`me-2 ${style.dateIcon} ${changeModel?"":style.changeIcon}`}
+                                    alt='folderIcon'
+                                    />
                                 <p style={{color:`${modelAnnotation}`}}>{archive.folder}</p>
                             </div>
                             <h5 className={` ${style.articleName}`}>{archive.name}</h5>

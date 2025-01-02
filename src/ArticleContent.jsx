@@ -28,17 +28,29 @@ export default function ArticleContent() {
                 <h2>{categoryInfo.name}</h2>
                 <div className="d-flex">
                     <div className="d-flex me-3">
-                        <img className={`${style.dateIcon} ${changeModel?"":style.changeIcon}`} src={process.env.PUBLIC_URL+'/img/widget/dateImg.png'}/>
+                        <img 
+                            className={`${style.dateIcon} ${changeModel?"":style.changeIcon}`} 
+                            src={process.env.PUBLIC_URL+'/img/widget/dateImg.png'}
+                            alt="dateIcon"
+                            />
                         <p className="ms-2" style={{color:`${modelAnnotation}`}}>{categoryInfo.date}</p>
                     </div>
                     <div className="d-flex">
-                        <img className={`${style.dateIcon} ${changeModel?"":style.changeIcon}`} src={process.env.PUBLIC_URL+'/img/widget/data.png'}/>
+                        <img 
+                            className={`${style.dateIcon} ${changeModel?"":style.changeIcon}`} 
+                            src={process.env.PUBLIC_URL+'/img/widget/data.png'}
+                            alt="dataIcon"
+                            />
                         <p className="ms-2" style={{color:`${modelAnnotation}`}}>{categoryInfo.folder}</p>
                     </div>                    
                 </div>
 
                 <div className="contentBlock">
-                    <img src={process.env.PUBLIC_URL+'/img/'+categoryInfo.img} className={style.themeImg}/>
+                    <img 
+                        src={process.env.PUBLIC_URL+'/img/'+categoryInfo.img} 
+                        className={style.themeImg}
+                        alt="themeImage"
+                        />
                     <div className='p-3'>
                         <div className='Preface'>
                             <p className={`lh text-wrap ${style.changeText}`}>
@@ -66,7 +78,11 @@ export default function ArticleContent() {
                                                     </>
                                                 );
                                             case "largeImg":
-                                                return <img src={process.env.PUBLIC_URL+`/img/${item.src}`} className={style.themeImg}/>;
+                                                return <img 
+                                                            src={process.env.PUBLIC_URL+`/img/${item.src}`} 
+                                                            className={style.themeImg}
+                                                            alt="largeImg"
+                                                            />;
                                             
                                             case "checkList":
                                                 return(
@@ -81,7 +97,11 @@ export default function ArticleContent() {
                                                 return <p className="mt-3" style={{color:`${modelAnnotation}`}}>{item.describe}</p>;
 
                                             case "middleImg":
-                                                return <img src={process.env.PUBLIC_URL+`/img/${item.src}`} className="border w-100 rounded"/>;
+                                                return <img
+                                                            src={process.env.PUBLIC_URL+`/img/${item.src}`} 
+                                                            className="border w-100 rounded"
+                                                            alt="middleImage"
+                                                            />;
 
                                             case "program":
                                                 return(

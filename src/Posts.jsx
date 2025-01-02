@@ -21,7 +21,11 @@ export default function Post() {
             <ChangeButton/>
           </div>
           <div className="d-flex align-items-start">
-            <img src={process.env.PUBLIC_URL+'/img/widget/postImg.png'} className={`${style.postIcon} ${changeModel?"":style.changeIcon}`}/>
+            <img 
+              src={process.env.PUBLIC_URL+'/img/widget/postImg.png'} 
+              className={`${style.postIcon} ${changeModel?"":style.changeIcon}`}
+              alt="postIcon"  
+            />
             <h3>Posts</h3> 
           </div>
           <h4 className="mb-3">共<span className="text-danger mx-1">{archives.length}</span>筆文章</h4>

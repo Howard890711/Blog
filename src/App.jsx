@@ -73,7 +73,7 @@ function App() {
           {
             type:"text",
             describe:'掌握 CSS 的基本選擇器和樣式規則。\n\n'+
-                    '熟悉盒模型、佈局方式（如 Flexbox 和 Grid）。\n\n'+
+                    '熟悉盒模型、佈局方式(如 Flexbox 和 Grid)。\n\n'+
                     '理解 CSS 的層疊優先級和響應式設計。'
           },
           {
@@ -94,17 +94,17 @@ function App() {
             type:"checkList",
             describe:
             [
-              '變數與數據類型（var, let, const）',
-              '條件語句與迴圈（if, for, while）',
-              '函式與箭頭函式（function, ()=&gt;）',
+              '變數與數據類型(var, let, const)',
+              '條件語句與迴圈(if, for, while)',
+              '函式與箭頭函式(function, ()=&gt;)',
               'ES6+ 語法',
-              '解構賦值（Destructuring）',
-              '展開運算符（Spread Operator）',
-              '模板字串（Template Literals）', 
-              '模組系統（import/export）',
+              '解構賦值(Destructuring)',
+              '展開運算符(Spread Operator)',
+              '模板字串(Template Literals)', 
+              '模組系統(import/export)',
               'DOM 操作',
               '理解如何使用 JavaScript 操作 DOM 元素',
-              '熟悉事件監聽（addEventListener）'
+              '熟悉事件監聽(addEventListener)'
             ]
           },
           {
@@ -143,8 +143,8 @@ function App() {
           },
           {
             type:"text",
-            describe:"安裝 Node.js 並理解其作用（用於運行 JavaScript）。\n\n"+
-                      "熟悉 npm（Node Package Manager），學會使用它來安裝和管理依賴。"
+            describe:"安裝 Node.js 並理解其作用(用於運行 JavaScript)。\n\n"+
+                      "熟悉 npm(Node Package Manager)，學會使用它來安裝和管理依賴。"
           }
         ],
         [
@@ -154,7 +154,7 @@ function App() {
           },
           {
             type:"text",
-            describe:"理解 SPA（Single Page Application）單頁應用的基本概念。\n\n"+
+            describe:"理解 SPA(Single Page Application)單頁應用的基本概念。\n\n"+
                       "掌握模組化和元件化的思想。"
           }
         ],
@@ -179,9 +179,9 @@ function App() {
           },
           {
             type:"text",
-            describe:"熟悉代碼編輯器（如 VS Code）和其插件。\n\n"+
-                      "學會使用瀏覽器的開發者工具（DevTools）。\n\n"+
-                      "瞭解 React 開發常用工具（如 Create React App）。"
+            describe:"熟悉代碼編輯器(如 VS Code)和其插件。\n\n"+
+                      "學會使用瀏覽器的開發者工具(DevTools)。\n\n"+
+                      "瞭解 React 開發常用工具(如 Create React App)。"
           }
         ],
         [
@@ -252,7 +252,7 @@ function App() {
           },
           {
             type:"text",
-            describe:"香山區的地名典雅，傳說是國姓爺（鄭成功）治台時，此地為竹塹社番所居往，沒有固定名稱，"+
+            describe:"香山區的地名典雅，傳說是國姓爺(鄭成功)治台時，此地為竹塹社番所居往，沒有固定名稱，"+
                       "後移居至此的漢人看見大坪頂一帶，漫山遍野盛開著無名花草，芬芳無比，所以此地命名為「香山」，"+
                       "佔地廣闊的香山區，正以自然風貌等待遊客前來，此區有中華大學、玄奘大學，元培科技大學等。"
           },

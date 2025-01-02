@@ -20,7 +20,11 @@ export default function Categories() {
                   <ChangeButton/>
             </div>
             <div className="d-flex align-items-start">
-                <img src={process.env.PUBLIC_URL+'/img/widget/folder.png'} className={`${style.folderImg} ${changeModel?"":style.changeIcon}`}/>
+                <img 
+                    src={process.env.PUBLIC_URL+'/img/widget/folder.png'} 
+                    className={`${style.folderImg} ${changeModel?"":style.changeIcon}`}
+                    alt="cagegoryIcon"
+                    />
                 <h3>Categories</h3>
             </div>
             <h4 className="mb-3">共<span className="text-danger mx-1">{categories.length}</span>種類別</h4>

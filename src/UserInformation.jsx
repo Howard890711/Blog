@@ -22,11 +22,13 @@ export default function UserInformation() {
         <aside>
             <div className={`rounded shadow-sm ${modelBlock} ${style.userInfo}`}>
                 <div className={`rounded-circle overflow-hidden border ${style.userImgContainer}`}>
-                    <img className='img-fluid' src={process.env.PUBLIC_URL+'/img/headShot/head_shot1.jpg'}/>
+                    <img className='img-fluid' src={process.env.PUBLIC_URL+'/img/headShot/head_shot1.jpg'} alt="大頭貼"/>
                 </div>
                 <div className='userBlock'>
                     <div className="col text-center">
-                        <h5>Howard</h5>
+                        <Link to="/About" className={style.userName}>
+                            <h5>Howard</h5>
+                        </Link>
                     </div>
                     <div className="categoryAndPost row text-center mx-1">
                         <div className={`col ${style.containerCA}`} onClick={handlePosts}>
@@ -46,7 +48,8 @@ export default function UserInformation() {
                 <div className={style.categoryTitle} onClick={handleCategories}>
                     <img 
                         src={process.env.PUBLIC_URL+'/img/widget/folder.png'}
-                        className={`${style.folderIcon} ${changeModel?"":style.changeIcon}`}/>
+                        className={`${style.folderIcon} ${changeModel?"":style.changeIcon}`}
+                        alt="分類Icon"/>
                     <p className="ms-2 fw-bold">Categories</p>
                 </div>
                 <div className="folderContainer">
