@@ -18,7 +18,7 @@ function Title() {
       <nav className={`navbar ${style.titleContainer} ${changeModel?"":"bg-dark"}`}>
         <Link to="/" style={{textDecoration:'none'}}>
           <div className={`d-flex align-items-center ${style.titleLink}`}>
-            <h2 className={`${style.titleFirst} ${modelText}`}>HW&nbsp;</h2>
+            <h2 className={`${style.titleFirst} ${modelText}`}>HW</h2>
             <h2 className={`${style.titleSecond} ${modelText}`}>Blog</h2>
           </div> 
         </Link>
