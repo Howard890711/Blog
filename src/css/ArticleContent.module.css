@@ -1,20 +1,5 @@
-.header{
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;    
-}
 
-
-.articleContainer{
-    padding:60px 10%;
-    gap: 40px;
-    align-items: flex-start;
-    display: flex;
-}
-
-.leftContainer{
-    padding:30px 50px;
-    flex: 2;
+.container{
     white-space: pre-wrap;
     overflow-wrap: break-word;
 }
@@ -25,9 +10,6 @@
     width: 20px;
 }
 
-.changeIcon{/*轉換顏色*/
-    filter: invert(100%) brightness(200%);
-}
 
 
 .themeImg{
@@ -48,7 +30,7 @@
     font-size: 1.25rem;
 }
 
-.changeText{
+.fontSize{
     font-size: 1.25rem;
 }
 
@@ -56,26 +38,20 @@
     display: none;
 }
 
-.layout{
+.contentBlock{
     padding: 15px;
 }
 
+/* .textWrap{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+} */
+
 @media(max-width:1024px){
 
-    .articleContainer{
-        padding:25px ;
-    }
 
-    .rightContainer{
-        display: none;
-    }
-
-    .leftContainer{
-        width: 100%;
-        padding:30px 25px;
-    }
-
-    .changeText{
+    .fontSize{
         font-size: 1rem;
     }
 
@@ -88,16 +64,12 @@
 
     .gitInstruction{
         font-size: 15px;
-        color: rgb(235, 96, 96);
-    }
-
-    .switchButton{
-        display:flex;
+        /* color: rgb(235, 96, 96); */
     }
 }
 
 @media(max-width:768px){
-    .layout{
+    .contentBlock{
         padding: 0px;
         padding-top:10px ;
     }

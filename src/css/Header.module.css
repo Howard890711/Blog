@@ -42,10 +42,6 @@
     filter: invert(100%) brightness(200%);
 }
 
-
-
-
-
 @media(max-width:1024px){
     .titleContainer{
         padding:20px 25px;

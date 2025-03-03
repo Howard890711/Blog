@@ -1,14 +1,9 @@
-import { useContext } from "react";
-import Footer from "./Footer";
-import Title from "./Title";
-import UserInformation from "./UserInformation";
-import style from "./css/ArticleContent.module.css"
-import { ArchiveContext } from "./Archive";
+import style from "../css/ArticleContent.module.css"
 import { Link, useParams } from "react-router-dom";
-import ChangeButton from "./ChangeButton";
+import { useArchive } from "../ArchiveData";
 
-export default function ArticleContent() {
-    let {archives,changeModel,modelBlock,modelAnnotation,modelText}=useContext(ArchiveContext);
+export default function ArticleContent() {//文章內容
+    let {archives,isLight,modelAnnotation,modelIcon}=useArchive();
     let params=useParams();
 
 
@@ -18,18 +13,14 @@ export default function ArticleContent() {
     
 
   return (
-    <div className={style.header}>
-        <Title/>
-        <div className={style.articleContainer}>
-            <div className={`rounded shadow-sm ${style.leftContainer} ${modelBlock}`}>
-                <div className={style.switchButton}>
-                  <ChangeButton/>
-                </div>
+
+            <div className={style.container}>
                 <h2>{categoryInfo.name}</h2>
                 <div className="d-flex">
                     <div className="d-flex me-3">
                         <img 
-                            className={`${style.dateIcon} ${changeModel?"":style.changeIcon}`} 
+                            className={style.dateIcon}
+                            style={{filter:modelIcon}} 
                             src={process.env.PUBLIC_URL+'/img/widget/dateImg.png'}
                             alt="dateIcon"
                             />
@@ -37,7 +28,8 @@ export default function ArticleContent() {
                     </div>
                     <div className="d-flex">
                         <img 
-                            className={`${style.dateIcon} ${changeModel?"":style.changeIcon}`} 
+                            className={style.dateIcon} 
+                            style={{filter:modelIcon}}
                             src={process.env.PUBLIC_URL+'/img/widget/data.png'}
                             alt="dataIcon"
                             />
@@ -51,15 +43,15 @@ export default function ArticleContent() {
                         className={style.themeImg}
                         alt="themeImage"
                         />
-                    <div className={style.layout}>
+                    <div className={style.contentBlock}>
                         <div className='Preface'>
-                            <p className={`lh text-wrap ${style.changeText}`}>
+                            <p className={`lh text-wrap ${style.fontSize}`}>
                                  {categoryInfo.preface} 
                             </p>
                         </div>
                         {
                             categoryInfo.content.map(section=>(
-                                <div className="mb-4" key={section.id}>
+                                <div className="mb-4">
                                     {section.map(item=>{
                                         switch(item.type){
                                             case "title":
@@ -72,7 +64,7 @@ export default function ArticleContent() {
                                             case "text":
                                                 return(
                                                     <>
-                                                        <p className={`lh ${style.changeText}`}>
+                                                        <p className={`lh ${style.fontSize}`}>
                                                             {item.describe}
                                                         </p>
                                                     </>
@@ -86,9 +78,9 @@ export default function ArticleContent() {
                                             
                                             case "checkList":
                                                 return(
-                                                    <ul className={`lh ${style.changeText}`} >
+                                                    <ul className={`lh ${style.fontSize}`} >
                                                         {item.describe.map((listItem)=>(
-                                                            <li className={`${modelText}`}>{listItem}</li>
+                                                            <li className={isLight?"":"text-white"}>{listItem}</li>
                                                         ))}
                                                     </ul>
                                                 );
@@ -112,7 +104,7 @@ export default function ArticleContent() {
                                             
                                             case "link":
                                                 return (<div className={` lh ${style.link}`}>
-                                                            <Link to={item.src} style={{color:changeModel?"":"#46A3FF"}}>{item.linkName}</Link>
+                                                            <Link to={item.src} style={{color:isLight?"":"#46A3FF"}}>{item.linkName}</Link>
                                                         </div>
                                                         );
                                             default:
@@ -126,12 +118,6 @@ export default function ArticleContent() {
                 </div>
                 
             </div>
-            <div className={style.rightContainer}>
-                <UserInformation/>
-            </div>
-        </div>
-        <Footer/>   
-    </div>
   )
 }
 

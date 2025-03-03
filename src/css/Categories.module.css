@@ -1,20 +1,3 @@
-.header{
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;    
-}
-
-
-.container{
-    padding:60px 10%;
-    gap: 40px;
-    display: flex;
-}
-
-.leftContainer{
-    padding:30px 50px;
-    flex:2;
-}
 
 .folderImg{
     height: 30px;
@@ -35,29 +18,8 @@
     text-decoration: underline;
 }
 
-.changeIcon{/*轉換顏色*/
-    filter: invert(100%) brightness(200%);
+.title{
+    text-decoration: none;
+    color: black;
 }
 
-
-@media(max-width:1024px){
-
-    .container{
-        padding:25px;
-        margin-bottom: 0px;
-    }
-
-    .rightContainer{
-        display: none;
-    }
-    
-    .leftContainer{
-        width: 100%;
-        padding:30px 25px;        
-    }
-
-    .switchButton{
-        display: flex;
-    }
-
-}
